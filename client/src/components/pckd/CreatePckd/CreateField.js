@@ -145,8 +145,7 @@ const CreateField = ({ createPckd }) => {
             <label htmlFor="pckd">Custom Backhalf / Pckd</label>
             <TextBox
               {...register("pckd", {
-                minLength: 3,
-                maxLength: 100,
+                maxLength: 128,
                 required: false,
                 pattern: /^[a-zA-Z0-9-_]+$/,
               })}
@@ -157,8 +156,7 @@ const CreateField = ({ createPckd }) => {
                 {
                   {
                     pattern: "Only alphanumeric values are allowed",
-                    maxLength: "Max length allowed is 100 chars",
-                    minLength: "Min length allowed is 3 characters",
+                    maxLength: "Max length allowed is 128 chars"
                   }[errors?.pckd?.type]
                 }
               </span>
