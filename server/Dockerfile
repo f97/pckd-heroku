@@ -2,7 +2,7 @@ FROM node:16-alpine
 
 # Dependencies
 RUN apk add --no-cache dos2unix
-RUN npm install -g nodemon prisma
+RUN npm install -g prisma
 
 # Start script
 COPY --chown=node:node ./docker-start.sh /entrypoint.sh

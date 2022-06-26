@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "cd client && yarn && yarn build && cd ../server && yarn",
-    "server": "cd server && nodemon server.js",
+    "server": "cd server && node server.js",
     "client": "cd client && yarn start",
     "db-init": "cd server && npm run db-init",
     "start": "export NODE_ENV=production && cd server && npm start"
@@ -23,8 +23,5 @@
   "bugs": {
     "url": "https://github.com/Just-Moh-it/pckd/issues"
   },
-  "homepage": "https://github.com/Just-Moh-it/pckd#top",
-  "devDependencies": {
-    "nodemon": "^2.0.18"
-  }
+  "homepage": "https://github.com/Just-Moh-it/pckd#top"
 }

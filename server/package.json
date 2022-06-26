@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/.",
+    "dev": "node src/.",
     "start": "npm run dev",
     "prod": "node src/.",
     "server": "cd server && npm run dev",
@@ -33,7 +33,6 @@
     "ua-parser-js": "^1.0.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.18",
     "prisma": "^3.1.1"
   }
 }
