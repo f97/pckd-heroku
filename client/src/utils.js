@@ -1,8 +1,12 @@
 export const getCompanyLogoLinkFromURI = (uri) => {
   if (!uri) return;
   const domain = getDomainFromURI(uri);
-  const imgURI = `https://logo.clearbit.com/${domain}`;
-  return imageExists(imgURI) ? imgURI : `https://${domain}/favicon.ico`;
+  try {
+    const imgURI = `https://logo.clearbit.com/${domain}`;
+    return imageExists(imgURI) ? imgURI : `https://${domain}/favicon.ico`;
+  } catch (error) {
+    return `https://${domain}/favicon.ico`;
+  }
 };
 
 export const imageExists = (URI) => {

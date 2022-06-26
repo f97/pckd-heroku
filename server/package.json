@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node src/.",
+    "dev": "nodemon src/.",
     "start": "npm run dev",
     "prod": "node src/.",
-    "server": "cd server && npm run dev",
+    "server": "cd server && npm run prod",
     "db-init": "npx -y prisma db push"
   },
   "keywords": [],
@@ -30,6 +30,7 @@
     "jsonwebtoken": "^8.5.1",
     "nanoid": "^3.1.28",
     "nodemailer": "^6.7.2",
+    "nodemon": "^2.0.18",
     "ua-parser-js": "^1.0.2"
   },
   "devDependencies": {

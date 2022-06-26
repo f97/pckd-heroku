@@ -272,7 +272,7 @@ const RightWrapper = () => {
                     <Clock className="icon" />
                     <span className="subheading">
                       Visit Time ({activeHit?.timezone.abbreviation} |{" "}
-                      {`${
+                      {activeHit?.timezone.offset && `${
                         !activeHit?.timezone.offset
                           .toString()
                           .startsWith("-") && "+"
