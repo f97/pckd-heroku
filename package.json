@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/Just-Moh-it/pckd/issues"
   },
-  "homepage": "https://github.com/Just-Moh-it/pckd#top"
+  "homepage": "https://github.com/Just-Moh-it/pckd#top",
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  }
 }
