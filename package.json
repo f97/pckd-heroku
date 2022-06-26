@@ -7,8 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "init": "cd client && yarn && cd ../server && yarn",
-    "build": "cd client && yarn build",
+    "build": "cd client && yarn && yarn build && cd ../server && yarn",
     "server": "cd server && nodemon server.js",
     "client": "cd client && yarn start",
     "db-init": "cd server && npm run db-init",
